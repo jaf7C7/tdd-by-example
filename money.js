@@ -1,5 +1,8 @@
 class Dollar {
-	amount = 5;
+	constructor() {
+		this.amount = 5;
+	}
+
 	times() {
 		this.amount *= 2;
 	}
