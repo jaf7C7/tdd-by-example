@@ -1,10 +1,10 @@
 class Dollar {
-	constructor() {
-		this.amount = 5;
+	constructor(amount) {
+		this.amount = amount;
 	}
 
-	times() {
-		this.amount *= 2;
+	times(multiplier) {
+		this.amount *= multiplier;
 	}
 }
 
