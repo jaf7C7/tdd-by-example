@@ -1,0 +1,12 @@
+{
+  "name": "tdd_by_example",
+  "version": "1.0.0",
+  "description": "The Money Example",
+  "type": "module",
+  "main": "money.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "author": "jaf7C7",
+  "license": "MIT"
+}
