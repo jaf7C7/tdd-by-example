@@ -14,4 +14,20 @@ class Dollar {
 	}
 }
 
-export default Dollar;
+class Franc {
+	_amount
+
+	constructor(amount) {
+		this._amount = amount;
+	}
+
+	times(multiplier) {
+		return new Franc(this._amount * multiplier);
+	}
+
+	equals(Franc) {
+		return Franc._amount === this._amount;
+	}
+}
+
+export { Dollar, Franc };

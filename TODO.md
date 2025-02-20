@@ -9,3 +9,6 @@
 - [x] ~~`Dollar.equals()`~~
 - [ ] Equal `null`
 - [ ] Equal other object
+- [x] ~~`5 CHF * 2 = 10 CHF`~~
+- [ ] **Generalise `equals()`**
+- [ ] Generalise `times()`
