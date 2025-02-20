@@ -9,3 +9,7 @@ test("Multiplication", () => {
 	product = five.times(3);
 	assert.equal(15, product.amount);
 });
+
+test("Equality", () => {
+	assert.equal(new Dollar(5).equals(new Dollar(5)), true);
+});
