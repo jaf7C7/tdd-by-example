@@ -5,6 +5,10 @@ class Money {
 		return new Dollar(amount);
 	}
 
+	static franc(amount) {
+		return new Franc(amount);
+	}
+
 	constructor(amount) {
 		this.amount = amount;
 	}

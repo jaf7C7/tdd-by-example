@@ -10,7 +10,8 @@
 - [ ] Equal `null`
 - [ ] Equal other object
 - [x] ~~`5 CHF * 2 = 10 CHF`~~
-- [ ] **Eliminate `Dollar`/`Franc` duplication**
+- [ ] Eliminate `Dollar`/`Franc` duplication
 - [x] ~~Generalise `equals()`~~
 - [ ] Generalise `times()`
 - [x] ~~Compare `Francs` with `Dollars`~~
+- [ ] Delete test `"Franc multiplication"`?
