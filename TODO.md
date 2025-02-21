@@ -12,3 +12,4 @@
 - [x] ~~`5 CHF * 2 = 10 CHF`~~
 - [x] ~~Generalise `equals()`~~
 - [ ] Generalise `times()`
+- [x] ~~Compare `Francs` with `Dollars`~~
