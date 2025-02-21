@@ -10,5 +10,5 @@
 - [ ] Equal `null`
 - [ ] Equal other object
 - [x] ~~`5 CHF * 2 = 10 CHF`~~
-- [ ] **Generalise `equals()`**
+- [x] ~~Generalise `equals()`~~
 - [ ] Generalise `times()`
