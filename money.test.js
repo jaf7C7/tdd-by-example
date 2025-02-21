@@ -14,7 +14,12 @@ test("Franc multiplication", () => {
 	assert.equal(new Franc(15).equals(five.times(3)), true);
 });
 
-test("Equality", () => {
+test("Dollar equality", () => {
 	assert.equal(new Dollar(5).equals(new Dollar(5)), true);
 	assert.equal(new Dollar(5).equals(new Dollar(6)), false);
+});
+
+test("Franc equality", () => {
+	assert.equal(new Franc(5).equals(new Franc(5)), true);
+	assert.equal(new Franc(5).equals(new Franc(6)), false);
 });
