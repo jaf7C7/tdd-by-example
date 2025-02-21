@@ -23,3 +23,7 @@ test("Franc equality", () => {
 	assert.equal(new Franc(5).equals(new Franc(5)), true);
 	assert.equal(new Franc(5).equals(new Franc(6)), false);
 });
+
+test("Dollar-Franc equality", () => {
+	assert.equal(new Franc(5).equals(new Dollar(5)), false);
+});
