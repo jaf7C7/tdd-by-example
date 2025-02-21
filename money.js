@@ -1,11 +1,12 @@
 class Money {
-	amount;
+	constructor(amount) {
+		this.amount = amount;
+	}
 }
 
 class Dollar extends Money {
 	constructor(amount) {
-		super();
-		this.amount = amount;
+		super(amount);
 	}
 
 	times(multiplier) {
