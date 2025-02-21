@@ -1,6 +1,10 @@
 class Money {
 	amount;
 
+	static dollar(amount) {
+		return new Dollar(amount);
+	}
+
 	constructor(amount) {
 		this.amount = amount;
 	}
@@ -25,4 +29,4 @@ class Franc extends Money {
 	}
 }
 
-export { Dollar, Franc };
+export { Dollar, Franc, Money };
