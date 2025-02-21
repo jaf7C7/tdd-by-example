@@ -1,11 +1,11 @@
 import assert from "node:assert";
 import { test } from "node:test";
-import { Dollar, Franc } from "./money.js";
+import { Franc, Money } from "./money.js";
 
 test("Dollar multiplication", () => {
-	const five = new Dollar(5);
-	assert.equal(new Dollar(10).equals(five.times(2)), true);
-	assert.equal(new Dollar(15).equals(five.times(3)), true);
+	const five = Money.dollar(5);
+	assert.equal(Money.dollar(10).equals(five.times(2)), true);
+	assert.equal(Money.dollar(15).equals(five.times(3)), true);
 });
 
 test("Franc multiplication", () => {
@@ -15,8 +15,8 @@ test("Franc multiplication", () => {
 });
 
 test("Dollar equality", () => {
-	assert.equal(new Dollar(5).equals(new Dollar(5)), true);
-	assert.equal(new Dollar(5).equals(new Dollar(6)), false);
+	assert.equal(Money.dollar(5).equals(Money.dollar(5)), true);
+	assert.equal(Money.dollar(5).equals(Money.dollar(6)), false);
 });
 
 test("Franc equality", () => {
@@ -25,5 +25,5 @@ test("Franc equality", () => {
 });
 
 test("Dollar-Franc equality", () => {
-	assert.equal(new Franc(5).equals(new Dollar(5)), false);
+	assert.equal(new Franc(5).equals(Money.dollar(5)), false);
 });
