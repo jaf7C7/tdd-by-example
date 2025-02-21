@@ -14,19 +14,9 @@ class Dollar extends Money {
 	}
 }
 
-class Franc {
-	_amount
-
-	constructor(amount) {
-		this._amount = amount;
-	}
-
+class Franc extends Money {
 	times(multiplier) {
-		return new Franc(this._amount * multiplier);
-	}
-
-	equals(Franc) {
-		return Franc._amount === this._amount;
+		return new Franc(this.amount * multiplier);
 	}
 }
 
