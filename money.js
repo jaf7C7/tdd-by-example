@@ -1,4 +1,7 @@
-class Dollar {
+class Money {
+}
+
+class Dollar extends Money {
 	_amount
 
 	constructor(amount) {
