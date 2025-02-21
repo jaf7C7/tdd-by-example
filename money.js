@@ -1,7 +1,11 @@
-class Dollar {
+class Money {
+}
+
+class Dollar extends Money {
 	#amount
 
 	constructor(amount) {
+		super();
 		this.#amount = amount;
 	}
 
