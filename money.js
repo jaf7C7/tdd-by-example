@@ -1,19 +1,19 @@
 class Money {
+	amount;
 }
 
 class Dollar extends Money {
-	_amount
-
 	constructor(amount) {
-		this._amount = amount;
+		super();
+		this.amount = amount;
 	}
 
 	times(multiplier) {
-		return new Dollar(this._amount * multiplier);
+		return new Dollar(this.amount * multiplier);
 	}
 
 	equals(dollar) {
-		return dollar._amount === this._amount;
+		return dollar.amount === this.amount;
 	}
 }
 
