@@ -1,6 +1,6 @@
 import assert from "node:assert";
 import { test } from "node:test";
-import { Franc, Money } from "./money.js";
+import { Money } from "./money.js";
 
 test("Dollar multiplication", () => {
 	const five = Money.dollar(5);
@@ -9,9 +9,9 @@ test("Dollar multiplication", () => {
 });
 
 test("Franc multiplication", () => {
-	const five = new Franc(5);
-	assert.equal(new Franc(10).equals(five.times(2)), true);
-	assert.equal(new Franc(15).equals(five.times(3)), true);
+	const five = Money.franc(5);
+	assert.equal(Money.franc(10).equals(five.times(2)), true);
+	assert.equal(Money.franc(15).equals(five.times(3)), true);
 });
 
 test("Dollar equality", () => {
@@ -20,10 +20,10 @@ test("Dollar equality", () => {
 });
 
 test("Franc equality", () => {
-	assert.equal(new Franc(5).equals(new Franc(5)), true);
-	assert.equal(new Franc(5).equals(new Franc(6)), false);
+	assert.equal(Money.franc(5).equals(Money.franc(5)), true);
+	assert.equal(Money.franc(5).equals(Money.franc(6)), false);
 });
 
 test("Dollar-Franc equality", () => {
-	assert.equal(new Franc(5).equals(Money.dollar(5)), false);
+	assert.equal(Money.franc(5).equals(Money.dollar(5)), false);
 });
