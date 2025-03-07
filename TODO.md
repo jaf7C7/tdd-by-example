@@ -14,4 +14,5 @@
 - [x] ~~Generalise `equals()`~~
 - [ ] Generalise `times()`
 - [x] ~~Compare `Francs` with `Dollars`~~
+- [ ] **Add notion of currency?**
 - [ ] Delete test `"Franc multiplication"`?

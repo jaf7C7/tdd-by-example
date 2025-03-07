@@ -27,3 +27,8 @@ test("Franc equality", () => {
 test("Dollar-Franc equality", () => {
 	assert.equal(Money.franc(5).equals(Money.dollar(5)), false);
 });
+
+test("Currency", () => {
+	assert.equal("USD", Money.dollar(1).currency);
+	assert.equal("CHF", Money.franc(1).currency);
+});

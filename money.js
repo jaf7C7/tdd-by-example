@@ -20,12 +20,16 @@ class Money {
 }
 
 class Dollar extends Money {
+	currency = "USD";
+
 	times(multiplier) {
 		return new Dollar(this.amount * multiplier);
 	}
 }
 
 class Franc extends Money {
+	currency = "CHF";
+
 	times(multiplier) {
 		return new Franc(this.amount * multiplier);
 	}
