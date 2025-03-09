@@ -20,7 +20,10 @@ class Money {
 }
 
 class Dollar extends Money {
-	_currency = "USD";
+	constructor(amount) {
+		super(amount);
+		this._currency = "USD";
+	}
 
 	get currency() {
 		return this._currency;
