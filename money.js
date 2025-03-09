@@ -30,7 +30,7 @@ class Dollar extends Money {
 	}
 
 	times(multiplier) {
-		return new Dollar(this.amount * multiplier);
+		return Money.dollar(this.amount * multiplier);
 	}
 }
 
