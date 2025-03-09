@@ -1,6 +1,6 @@
 class Money {
 	static dollar(amount) {
-		return new Dollar(amount);
+		return new Dollar(amount, "USD");
 	}
 
 	static franc(amount) {
@@ -20,9 +20,9 @@ class Money {
 }
 
 class Dollar extends Money {
-	constructor(amount) {
+	constructor(amount, currency) {
 		super(amount);
-		this._currency = "USD";
+		this._currency = currency;
 	}
 
 	get currency() {
