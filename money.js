@@ -7,8 +7,13 @@ class Money {
 		return new Franc(amount, "CHF");
 	}
 
-	constructor(amount) {
+	constructor(amount, currency) {
 		this.amount = amount;
+		this._currency = currency;
+	}
+
+	get currency() {
+		return this._currency;
 	}
 
 	equals(money) {
@@ -20,30 +25,12 @@ class Money {
 }
 
 class Dollar extends Money {
-	constructor(amount, currency) {
-		super(amount);
-		this._currency = currency;
-	}
-
-	get currency() {
-		return this._currency;
-	}
-
 	times(multiplier) {
 		return Money.dollar(this.amount * multiplier);
 	}
 }
 
 class Franc extends Money {
-	constructor(amount, currency) {
-		super(amount);
-		this._currency = currency;
-	}
-
-	get currency() {
-		return this._currency;
-	}
-
 	times(multiplier) {
 		return Money.franc(this.amount * multiplier);
 	}

@@ -12,7 +12,7 @@
 - [x] ~~`5 CHF * 2 = 10 CHF`~~
 - [ ] Eliminate `Dollar`/`Franc` duplication
 - [x] ~~Generalise `equals()`~~
-- [ ] Generalise `times()`
+- [ ] **Generalise `times()`**
 - [x] ~~Compare `Francs` with `Dollars`~~
-- [ ] **Add notion of currency?**
+- [x] ~~Add notion of currency?~~
 - [ ] Delete test `"Franc multiplication"`?
