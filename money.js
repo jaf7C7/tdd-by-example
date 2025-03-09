@@ -20,7 +20,11 @@ class Money {
 }
 
 class Dollar extends Money {
-	currency = "USD";
+	_currency = "USD";
+
+	get currency() {
+		return this._currency;
+	}
 
 	times(multiplier) {
 		return new Dollar(this.amount * multiplier);
@@ -28,7 +32,11 @@ class Dollar extends Money {
 }
 
 class Franc extends Money {
-	currency = "CHF";
+	_currency = "CHF";
+
+	get currency() {
+		return this._currency;
+	}
 
 	times(multiplier) {
 		return new Franc(this.amount * multiplier);
